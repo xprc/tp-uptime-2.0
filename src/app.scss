@@ -48,7 +48,7 @@ a {
       transition: color ease 150ms;
     }
     a:hover {
-      color: #b68ff3;
+      color: #bfbdc3;
     }
   }
 }
@@ -169,5 +169,8 @@ a {
   a {
     font-weight: bold;
     color: #00f;
+  }
+  a:hover {
+    color: #00e7ff;
   }
 }
