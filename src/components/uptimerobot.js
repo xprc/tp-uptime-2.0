@@ -47,7 +47,7 @@ function UptimeRobot({ apikey }) {
         })}
       </div>
       <div className='summary'>
-        <span>{site.daily[site.daily.length - 1].date.format('YYYY-MM-DD')}</span>
+        <span>{site.daily[site.daily.length - 60].date.format('YYYY-MM-DD')}</span>
         <span>
           {site.total.times
             ? `最近 ${CountDays} 天故障 ${site.total.times} 次，累计 ${formatDuration(site.total.duration)}，平均可用率 ${site.average}%`
