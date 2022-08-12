@@ -9,6 +9,7 @@ export async function GetMonitors(apikey, days) {
   for (let d = 0; d < days; d++) {
     dates.push(today.subtract(d, 'day'));
   }
+  dates.reverse();
 
   const ranges = dates.map((date) => `${date.unix()}_${date.add(1, 'day').unix()}`);
   const start = dates[dates.length - 1].unix();
