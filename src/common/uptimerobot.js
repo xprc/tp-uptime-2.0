@@ -9,7 +9,6 @@ export async function GetMonitors(apikey, days) {
   for (let d = 0; d < days; d++) {
     dates.push(today.subtract(d, 'day'));
   }
-  dates.reverse();
 
   const ranges = dates.map((date) => `${date.unix()}_${date.add(1, 'day').unix()}`);
   const start = dates[dates.length - 1].unix();
@@ -42,6 +41,7 @@ export async function GetMonitors(apikey, days) {
         down: { times: 0, duration: 0 },
       }
     });
+    dates.reverse();
 
     const total = monitor.logs.reduce((total, log) => {
       if (log.type === 1) {
