@@ -41,7 +41,7 @@ export async function GetMonitors(apikey, days) {
         down: { times: 0, duration: 0 },
       }
     });
-    dates.reverse();
+    daily.reverse();
 
     const total = monitor.logs.reduce((total, log) => {
       if (log.type === 1) {
