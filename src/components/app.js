@@ -33,15 +33,15 @@ function App() {
         </div>
         <div id='footer'>
           <p>
-            <span onClick={switchTheme}>{theme === 'light' ? '深色模式' : '浅色模式'}</span> 
-            <Link to='https://www.projectoms.com/pc/view/Terms.html' text='服务条款' />
-            <Link to='https://www.projectoms.com/pc/view/Privacy.html' text='隐私政策' />
+            <span className='blocks' onClick={switchTheme}>{theme === 'light' ? '深色模式' : '浅色模式'}</span> 
+            <span className='blocks'><Link to='https://www.projectoms.com/pc/view/Terms.html' text='服务条款' /></span>
+            <span className='blocks'><Link to='https://www.projectoms.com/pc/view/Privacy.html' text='隐私政策' /></span>
           </p>
           <p>基于 <Link to='https://uptimerobot.com/' text='UptimeRobot' /> 接口制作，检测频率 5 分钟</p>
           <p>&copy; 2022 <Link to='https://www.projectoms.com/' text='TomsProject' /> 版权所有 v{Package.version}</p>
           <p>
-            <Link to='https://beian.miit.gov.cn/' text='京ICP备19007812号-2' />
-            <Link to='https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802032182' text='京公网安备11010802032182号' />
+            <span className='blocks'><Link to='https://beian.miit.gov.cn/' text='京ICP备19007812号-2' /></span>
+            <span className='blocks'><Link to='https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802032182' text='京公网安备11010802032182号' /></span>
           </p>
         </div>
       </div>
