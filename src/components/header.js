@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import useLocalStorage from 'use-local-storage';
 import Link from './link';
 
 function Header() {
