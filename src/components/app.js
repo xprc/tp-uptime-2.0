@@ -41,7 +41,6 @@ function App() {
           <p>&copy; 2022 <Link to='https://www.projectoms.com/' text='TomsProject' /> 版权所有 v{Package.version}</p>
           <p>
             <Link to='https://beian.miit.gov.cn/' text='京ICP备19007812号-2' />
-            <img width="20px" src="https://assets.projectoms.com/image/Icon/big/police-64.png" style="float:left;" />
             <Link to='https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802032182' text='京公网安备11010802032182号' />
           </p>
         </div>
