@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import Link from './link';
 import Header from './header';
+import useLocalStorage from 'use-local-storage';
 import UptimeRobot from './uptimerobot';
 import Package from '../../package.json';
 
