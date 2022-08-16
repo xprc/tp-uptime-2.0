@@ -33,7 +33,7 @@ function App() {
         </div>
         <div id='footer'>
           <p>
-            <span className='blocks' onClick={switchTheme}>{theme === 'light' ? '深色模式' : '浅色模式'}</span> 
+            <span className='blocks' onClick={switchTheme}><span className='color-change'>{theme === 'light' ? '深色模式' : '浅色模式'}</span></span> 
             <span className='blocks'><Link to='https://www.projectoms.com/pc/view/Terms.html' text='服务条款' /></span>
             <span className='blocks'><Link to='https://www.projectoms.com/pc/view/Privacy.html' text='隐私政策' /></span>
           </p>
