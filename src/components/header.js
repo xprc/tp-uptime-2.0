@@ -12,7 +12,6 @@ function Header() {
     <div id='header'>
       <div className='container'>
         <h1 className='logo'>{window.Config.SiteName}</h1>
-        <button onClick={switchTheme}>Switch to Theme</button>
         <div className='navi'>
           {window.Config.Navi.map((item, index) => (
             <Link key={index} to={item.url} text={item.text} />
