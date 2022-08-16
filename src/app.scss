@@ -1,5 +1,24 @@
 $primary-color: #3bd672;
 
+:root {
+  --background: #f7f9fa;
+  --header-color: #121a26;
+  --navi-a: #ffffff;
+  --uptime-background: #ffffff;
+  --site-name: #131a26;
+  --site-summary: #9aa2af;
+  --footer-txt: #969ea8;
+}
+[data-theme='dark'] {
+  --background: #0b0f14;
+  --header-color: #161b22;
+  --navi-a: #f0f6fc;
+  --uptime-background: #2a2a2b;
+  --site-name: #f0f6fc;
+  --site-summary: #c9d1d9;
+  --footer-txt: #c9d1d9;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,7 +29,7 @@ body {
   font-size: 14px;
   line-height: 1;
   color: #131a26;
-  background-color: #f7f9fa;
+  background-color: var(--background);
 }
 
 a {
@@ -28,7 +47,7 @@ a {
 }
 
 #header {
-  background-color: #121a26;
+  background-color: var(--header-color);
   padding: 30px 0 60px 0;
   color: #00f;
   width: 100%;
@@ -47,6 +66,7 @@ a {
     a {
       margin-left: 20px;
       transition: color ease 150ms;
+      color: var(--navi-a);
     }
     a:hover {
       color: #bfbdc3;
@@ -55,7 +75,7 @@ a {
 }
 
 #uptime {
-  background-color: #ffffff;
+  background-color: var(--uptime-background);
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   margin-top: -30px;
@@ -80,6 +100,7 @@ a {
       align-items: baseline;
       .name {
         font-size: 16px;
+        color: var(--site-name);
       }
       .link {
         background-image: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1036 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M600.818 697.6c-70.4 0-134.4-25.6-192-76.8-25.6-25.6-25.6-64-6.4-89.6 25.6-25.6 64-25.6 89.6-6.4 57.6 51.2 147.2 51.2 198.4 0l166.4-166.4c25.6-25.6 38.4-64 38.4-102.4 0-25.6-6.4-64-38.4-96-57.6-51.2-147.2-51.2-198.4 0l-64 76.8c-25.6 25.6-64 25.6-89.6 0-25.6-25.6-25.6-64 0-89.6l70.4-70.4c102.4-102.4 268.8-102.4 377.6 0 51.2 51.2 83.2 115.2 83.2 192 0 70.4-25.6 134.4-76.8 192l-166.4 166.4c-57.6 44.8-121.6 70.4-192 70.4z' fill='%238492A6'/%3E%3Cpath d='M274.418 1024c-70.4 0-134.4-25.6-192-76.8-108.8-96-108.8-262.4-6.4-377.6l166.4-166.4c108.8-102.4 275.2-102.4 377.6 0 25.6 25.6 25.6 64 0 89.6s-64 25.6-89.6 0c-51.2-51.2-140.8-51.2-198.4 0l-166.4 166.4c-44.8 51.2-64 140.8 0 198.4 57.6 51.2 147.2 51.2 198.4 0l70.4-70.4c25.6-25.6 64-25.6 89.6 0s25.6 64 0 89.6l-70.4 70.4c-44.8 51.2-108.8 76.8-179.2 76.8z' fill='%238492A6'/%3E%3C/svg%3E");
@@ -150,7 +171,7 @@ a {
       justify-content: space-between;
       font-size: 13px;
       line-height: 15px;
-      color: #9aa2af;
+      color: var(--site-summary);
     }
     .tooltip {
       padding: 6px 9px !important;
@@ -166,7 +187,7 @@ a {
   font-size: 12px;
   text-align: center;
   line-height: 25px;
-  color: #969ea8;
+  color: var(--footer-txt);
   a {
     font-weight: bold;
     color: #00f;
