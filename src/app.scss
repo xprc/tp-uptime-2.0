@@ -29,12 +29,15 @@ body {
   font-size: 14px;
   line-height: 1;
   color: #131a26;
-  background-color: var(--background);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  background-color: var(--background);
 }
 
 #app {
