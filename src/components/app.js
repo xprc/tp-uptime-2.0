@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className='app' data-theme={theme}>
       <Header />
       <div className='container'>
         <div id='uptime'>
@@ -27,7 +27,7 @@ function App() {
           <p>&copy; 2022 <Link to='https://www.projectoms.com/' text='TomsProject' /> 版权所有 v{Package.version}</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
