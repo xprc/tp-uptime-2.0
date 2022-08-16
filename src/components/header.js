@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Link from './link';
+import { switchTheme } from './app';
 
 function Header() {
 
