@@ -8,7 +8,7 @@ function Header() {
   }, []);
   
   const switchTheme = () => {
-    settheme('dark');
+    setTheme('dark');
   };
 
   return (
