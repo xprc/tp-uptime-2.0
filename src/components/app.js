@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className='app' data-theme={theme}>
+    <div className='main' data-theme={theme}>
       <Header />
       <div className='container'>
         <div id='uptime'>
