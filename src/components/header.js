@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import useLocalStorage from 'use-local-storage';
 import Link from './link';
 
 function Header() {
@@ -7,8 +8,12 @@ function Header() {
     document.title = window.Config.SiteName;
   }, []);
   
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  
   const switchTheme = () => {
-    setTheme('dark');
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
   };
 
   return (
