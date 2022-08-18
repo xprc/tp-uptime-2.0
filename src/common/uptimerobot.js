@@ -28,13 +28,14 @@ export async function GetMonitors(apikey, days) {
   const response = await axios.post('https://status.projectoms.com/v2/getMonitors', postdata, { timeout: 10000 })
     .catch(function (error) {
       if (error.response) {
-        console.log(error.response.data);
-        console.log(error.response.status);
-        console.log(error.response.headers);
+        if (error.response.status === 429) {
+          console.log(11111111111111111111111);
+        } else {
+          throw error.response;
+        }
       } else {
         console.log('Error', error.message);
       }
-      console.log(error.config);
     });
   if (response.data.stat !== 'ok') throw response.data.error;
 
