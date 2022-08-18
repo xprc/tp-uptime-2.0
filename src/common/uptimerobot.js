@@ -38,6 +38,7 @@ export async function GetMonitors(apikey, days) {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
+            theme: "dark",
           });
         } else {
           throw error.response;
