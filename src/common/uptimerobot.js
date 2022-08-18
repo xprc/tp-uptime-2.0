@@ -30,7 +30,7 @@ export async function GetMonitors(apikey, days) {
   {
     if (response.status === 429)
     {
-      console.log(response.status);
+      throw 1;
     }
     else
     {
