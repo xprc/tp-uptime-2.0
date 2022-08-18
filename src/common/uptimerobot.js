@@ -34,8 +34,8 @@ export async function GetMonitors(apikey, days) {
     }
     else
     {
-      console.log(response.status);
-      throw response.data.error;
+      throw response.status;
+      //throw response.data.error;
     }
   }
   
