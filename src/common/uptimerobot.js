@@ -1,6 +1,6 @@
 import axios from 'axios';
 import dayjs from 'dayjs';
-import toast from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import { formatNumber } from './helper';
 
 export async function GetMonitors(apikey, days) {
