@@ -41,6 +41,7 @@ export async function GetMonitors(apikey, days) {
             progress: undefined,
             theme: theme,
           });
+          return;
         } else {
           throw error.response;
         }
