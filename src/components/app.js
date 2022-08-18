@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import Link from './link';
 import Header from './header';
 import useLocalStorage from 'use-local-storage';
+import ToastContainer from 'react-toastify';
 import UptimeRobot from './uptimerobot';
 import Package from '../../package.json';
 
@@ -46,6 +47,7 @@ function App() {
         </div>
       </div>
     </div>
+    <ToastContainer />
   );
 }
 
