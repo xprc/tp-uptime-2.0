@@ -29,7 +29,15 @@ export async function GetMonitors(apikey, days) {
     .catch(function (error) {
       if (error.response) {
         if (error.response.status === 429) {
-          console.log(11111111111111111111111);
+          toast.error('当前API调用过快, 请于一分钟后重试!!!', {
+            position: "top-right",
+            autoClose: 8000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         } else {
           throw error.response;
         }
