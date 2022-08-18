@@ -28,9 +28,9 @@ export async function GetMonitors(apikey, days) {
   const response = await axios.post('https://status.projectoms.com/v2/getMonitors', postdata, { timeout: 10000 });
   if (response.data.stat !== 'ok')
   {
-    if (response.status == 429)
+    if (response.status === 429)
     {
-      console.log("Too Many requst!");
+      throw "Too Many requst!;
     }
     else
     {
