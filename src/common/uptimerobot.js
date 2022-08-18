@@ -25,9 +25,19 @@ export async function GetMonitors(apikey, days) {
     custom_uptime_ranges: ranges.join('-'),
   };
 
-  const response = await axios.post('https://status.projectoms.com/v2/getMonitors', postdata, { timeout: 10000 });
-  
-  
+  const response = await axios.post('https://status.projectoms.com/v2/getMonitors', postdata, { timeout: 10000 })
+    .catch(function (error) {
+      if (error.response) {
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      } else {
+        console.log('Error', error.message);
+      }
+      console.log(error.config);
+    });
+  if (response.data.stat !== 'ok') throw response.data.error;
+
   return response.data.monitors.map((monitor) => {
 
     const ranges = monitor.custom_uptime_ranges.split('-');
