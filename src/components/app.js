@@ -5,6 +5,7 @@ import useLocalStorage from 'use-local-storage';
 import ToastContainer from 'react-toastify';
 import UptimeRobot from './uptimerobot';
 import Package from '../../package.json';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -46,8 +47,8 @@ function App() {
           </p>
         </div>
       </div>
+      <ToastContainer />
     </div>
-    <ToastContainer />
   );
 }
 
