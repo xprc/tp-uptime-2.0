@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import Link from './link';
 import Header from './header';
 import useLocalStorage from 'use-local-storage';
-import ToastContainer from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import UptimeRobot from './uptimerobot';
 import Package from '../../package.json';
 import 'react-toastify/dist/ReactToastify.css';
