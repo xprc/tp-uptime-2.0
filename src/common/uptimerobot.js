@@ -30,7 +30,7 @@ export async function GetMonitors(apikey, days) {
   {
     if (response.status === 429)
     {
-      throw "Too Many requst!;
+      console.log(response.status);
     }
     else
     {
