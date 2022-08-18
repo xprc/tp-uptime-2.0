@@ -30,6 +30,7 @@ export async function GetMonitors(apikey, days) {
     .catch(function (error) {
       if (error.response) {
         if (error.response.status === 429) {
+          const theme = document.getElementsByClassName("intro").getAttribute('data-value');
           toast.error('当前API调用过快, 请于一分钟后重试!!!', {
             position: "top-right",
             autoClose: 8000,
@@ -38,7 +39,7 @@ export async function GetMonitors(apikey, days) {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: "dark",
+            theme: theme,
           });
         } else {
           throw error.response;
