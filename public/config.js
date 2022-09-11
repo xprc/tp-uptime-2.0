@@ -11,6 +11,7 @@ window.Config = {
     'm786806247-6ed2645a58e211b9603d5b8d',  // assets.projectoms.com
     'm786806246-b4efa7e00cfd71ac8e655147',  // avatar.projectoms.com
     'm788295568-76778a8263e9c19a14b4588d',  // bucket.projectoms.com
+    'm792653937-d0a73c16c906b8805f89c645',  // media.projectoms.com
     'm788295575-83f4ce0c67de8beb34f97a35',  // dl.projectoms.com
     'm786806244-62a06340b5018360d5087335',  // s.tp.je
     'm791215570-9aca9f7901f8fd11fd6a0be3',  // ns1.vtp.xyz
