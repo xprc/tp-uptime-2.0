@@ -1,5 +1,5 @@
 window.Config = {
-  SiteName: '站点实时状态 | Toms Project',
+  SiteName: 'TPStatus - 站点实时状态 | Toms Project',
   SiteUrl: '/',
   ApiKeys: [
     'm785645577-71377351abf9c8f4b0ccaa7d',  // www.projectoms.com
