@@ -8,6 +8,7 @@ $primary-color: #3bd672;
   --site-name: #131a26;
   --site-summary: #9aa2af;
   --footer-txt: #969ea8;
+  --toastify-font-family: MiSans, sans-serif;
 }
 [data-theme='dark'] {
   --background: #0b0f14;
@@ -17,6 +18,7 @@ $primary-color: #3bd672;
   --site-name: #f0f6fc;
   --site-summary: #c9d1d9;
   --footer-txt: #c9d1d9;
+  --toastify-font-family: MiSans, sans-serif;
 }
 
 * {
