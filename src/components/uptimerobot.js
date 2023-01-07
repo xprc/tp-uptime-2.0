@@ -1,4 +1,4 @@
-import ReactTooltip from 'react-tooltip';
+import { Tooltip } from 'react-tooltip';
 import { useEffect, useState } from 'react';
 import { GetMonitors } from '../common/uptimerobot';
 import { formatDuration, formatNumber } from '../common/helper';
