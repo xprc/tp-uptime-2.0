@@ -1,4 +1,4 @@
-import { Tooltip } from 'react-tooltip';
+import { Tooltip, TooltipWrapper } from 'react-tooltip';
 import { useEffect, useState } from 'react';
 import { GetMonitors } from '../common/uptimerobot';
 import { formatDuration, formatNumber } from '../common/helper';
@@ -43,7 +43,7 @@ function UptimeRobot({ apikey }) {
             status = 'down';
             text += `故障 ${data.down.times} 次，累计 ${formatDuration(data.down.duration)}，可用率 ${formatNumber(data.uptime)}%`;
           }
-          return (<i key={index} className={status} data-tooltip-content={text} />)
+          return (<TooltipWrapper content={text}><i key={index} className={status} /></TooltipWrapper>)
         })}
       </div>
       <div className='summary'>
