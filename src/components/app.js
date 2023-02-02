@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { TooltipProvider } from 'react-tooltip';
 import UptimeRobot from './uptimerobot';
 import Package from '../../package.json';
+import 'react-tooltip/dist/react-tooltip.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
