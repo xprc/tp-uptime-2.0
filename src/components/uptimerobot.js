@@ -1,5 +1,4 @@
 import { Tooltip, TooltipWrapper } from 'react-tooltip';
-import 'react-tooltip/dist/react-tooltip.css';
 import { useEffect, useState } from 'react';
 import { GetMonitors } from '../common/uptimerobot';
 import { formatDuration, formatNumber } from '../common/helper';
