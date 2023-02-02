@@ -55,7 +55,7 @@ function UptimeRobot({ apikey }) {
         </span>
         <span>今天</span>
       </div>
-      <ReactTooltip className='tooltip' anchorId='tooltip' place='top' type='dark' effect='solid' />
+      <Tooltip className='tooltip' anchorId='tooltip' place='top' type='dark' effect='solid' />
     </div>
   ));
 
