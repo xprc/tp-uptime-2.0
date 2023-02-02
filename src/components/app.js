@@ -3,10 +3,8 @@ import Link from './link';
 import Header from './header';
 import useLocalStorage from 'use-local-storage';
 import { ToastContainer, toast } from 'react-toastify';
-import { TooltipProvider } from 'react-tooltip';
 import UptimeRobot from './uptimerobot';
 import Package from '../../package.json';
-import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -29,13 +27,11 @@ function App() {
     <div className='main' data-theme={theme}>
       <Header />
       <div className='container'>
-        <TooltipProvider>
-          <div id='uptime'>
-            {apikeys.map((key) => (
-              <UptimeRobot key={key} apikey={key} />
-            ))}
-          </div>
-        </TooltipProvider>
+        <div id='uptime'>
+          {apikeys.map((key) => (
+            <UptimeRobot key={key} apikey={key} />
+          ))}
+        </div>
         <div id='footer'>
           <p>
             <span className='blocks' onClick={switchTheme}><span className='color-change'>{theme === 'light' ? '深色模式' : '浅色模式'}</span></span> 
