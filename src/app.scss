@@ -146,29 +146,31 @@ a {
       display: flex;
       justify-content: space-between;
       margin: 15px 0 10px 0;
-      i {
-        flex-grow: 1;
-        margin: 0 1px;
-        height: 25px;
-        border-radius: 5px;
-        transition: opacity ease 150ms;
-        &.ok {
-          background-color: $primary-color;
-        }
-        &.down {
-          background-color: #f32c2e;
-        }
-        &.none {
-          background-color: #e5e8eb;
-        }
-        &:hover {
-          opacity: 0.6;
-        }
-        &:first-child {
-          margin-left: 0;
-        }
-        &:last-child {
-          margin-right: 0;
+      span {
+        i {
+          flex-grow: 1;
+          margin: 0 1px;
+          height: 25px;
+          border-radius: 5px;
+          transition: opacity ease 150ms;
+          &.ok {
+            background-color: $primary-color;
+          }
+          &.down {
+            background-color: #f32c2e;
+          }
+          &.none {
+            background-color: #e5e8eb;
+          }
+          &:hover {
+            opacity: 0.6;
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
