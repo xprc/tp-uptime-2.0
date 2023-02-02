@@ -43,7 +43,7 @@ function UptimeRobot({ apikey }) {
             status = 'down';
             text += `故障 ${data.down.times} 次，累计 ${formatDuration(data.down.duration)}，可用率 ${formatNumber(data.uptime)}%`;
           }
-          return (<TooltipWrapper content={text}><i key={index} className={status} /></TooltipWrapper>)
+          return (<TooltipWrapper key={index} className={status} content={text}></TooltipWrapper>)
         })}
       </div>
       <div className='summary'>
