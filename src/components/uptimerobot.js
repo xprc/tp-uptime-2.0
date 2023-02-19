@@ -2,6 +2,7 @@ import { Tooltip } from 'react-tooltip';
 import { useEffect, useState } from 'react';
 import { GetMonitors } from '../common/uptimerobot';
 import { formatDuration, formatNumber } from '../common/helper';
+import 'react-tooltip/dist/react-tooltip.css';
 import Link from './link';
 
 function UptimeRobot({ apikey }) {
