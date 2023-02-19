@@ -1,6 +1,6 @@
 {
   "name": "tp-uptime-2.0",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build"
