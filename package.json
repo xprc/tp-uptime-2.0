@@ -13,7 +13,7 @@
     "react-scripts": "^5.0.1",
     "react-toastify": "^9.1.2",
     "react-tooltip": "^5.11.1",
-    "sass": "^1.62.0",
+    "sass": "^1.62.1",
     "use-local-storage": "^2.3.6"
   },
   "browserslist": {
