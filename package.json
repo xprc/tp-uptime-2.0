@@ -12,7 +12,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.4",
-    "react-tooltip": "^5.25.1",
+    "react-tooltip": "^5.26.0",
     "sass": "^1.70.0",
     "use-local-storage": "^3.0.0"
   },
