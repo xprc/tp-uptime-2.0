@@ -8,7 +8,7 @@ $primary-color: #3bd672;
   --site-name: #131a26;
   --site-summary: #9aa2af;
   --footer-txt: #969ea8;
-  --toastify-font-family: MiSans, sans-serif;
+  --toastify-font-family: MiSans VF, Misans TC VF, MiSans L3, MiSans, sans-serif;
 }
 [data-theme='dark'] {
   --background: #0b0f14;
@@ -18,7 +18,7 @@ $primary-color: #3bd672;
   --site-name: #f0f6fc;
   --site-summary: #c9d1d9;
   --footer-txt: #c9d1d9;
-  --toastify-font-family: MiSans, sans-serif;
+  --toastify-font-family: MiSans VF, Misans TC VF, MiSans L3, MiSans, sans-serif;
 }
 
 * {
@@ -27,7 +27,7 @@ $primary-color: #3bd672;
 }
 
 body {
-  font-family: MiSans, sans-serif;
+  font-family: MiSans VF, Misans TC VF, MiSans L3, MiSans, sans-serif;
   font-size: 14px;
   line-height: 1;
   color: #131a26;
