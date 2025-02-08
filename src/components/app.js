@@ -40,7 +40,7 @@ function App() {
             <span className='blocks'><Link to='https://www.projectoms.com/page/privacy.html' text='隐私政策' /></span>
           </p>
           <p>基于 <Link to='https://uptimerobot.com/' text='UptimeRobot' /> 接口制作，检测频率 5 分钟</p>
-          <p>&copy; 2024 <Link to='https://www.projectoms.com/' text='TomsProject' /> 版权所有 v{Package.version}</p>
+          <p>&copy; 2025 <Link to='https://www.projectoms.com/' text='TomsProject' /> 版权所有 v{Package.version}</p>
           <p>
             <span className='blocks'><Link to='https://beian.miit.gov.cn/' text='京ICP备19007812号-2' /></span>
             <span className='blocks'><Link to='https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802032182' text='京公网安备11010802032182号' /></span>
