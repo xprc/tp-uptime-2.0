@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="https://assets.projectoms.com/image/Icon/big/icon-1024-round.webp">
+        <link rel="apple-touch-icon" href="https://assets.projectoms.com/image/Icon/big/icon-1024-round.webp">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+        <meta name="theme-color" content="#dce8f1">
+        <link rel="stylesheet" href="https://assets.projectoms.com/css/font-misans-zh_CN.css">
+        <title>504 | 网关服务器超时 | TomsProject 出错网页</title>
+        <style>
+            html, body {
+                height: 100%;
+            }
+            body {
+                background-color: #dce8f1;
+                margin: 0;
+                font-family: MiSans VF, Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .content-container {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 1.6em;
+                box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+                display: inline-block;
+                margin: 2em;
+                padding: 1.5rem 0.8rem 1rem 0.8rem;
+                width: 75%;
+            }
+            .not-found {
+                font-size: 5em;
+            }
+            .content-plate {
+                margin: 0.3rem;
+                background-color: red;
+                font-size: 2em;
+                text-align: center;
+                border-radius: 16px;
+                -webkit-box-shadow: 0 14px 23px rgb(0 0 0 / 33%);
+                box-shadow: 0 14px 23px rgb(0 0 0 / 33%);
+                display: block;
+                margin-inline-start: 2px;
+                margin-inline-end: 2px;
+                padding-block-start: 0.35em;
+                padding-inline-start: 0.75em;
+                padding-inline-end: 0.75em;
+                padding-block-end: 0.625em;
+                min-inline-size: min-content;
+            }
+            .return-menu {
+                font-size: 45px;
+                text-align: left;
+                margin-left: 3em;
+            }
+            .return-menu a {
+                color: blue;
+                text-decoration: none;
+            }
+            .content-container {
+                margin: 2em;
+            }
+            @media screen and (max-width: 800px) { 
+                .return-menu {
+                    margin-left: 0;
+                }
+                .content-container {
+                    margin: 2em 0;
+                    border-radius: 0.9em;
+                    width: 90%;
+                }
+            }
+            .footer-a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .footer-a:hover {
+                color: #4c4c4c;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <article class="content-container">
+                <strong><marquee class="not-found" behavior="alternate" scrollamount="10" scrolldelay="1">504--网关服务器超时</marquee></strong>
+                <div class="content-plate">
+                    <h2>504 - 你访问的网络服务器在作为网关或代理服务器时没有收到响应。</h2>
+                    <h3>作为网关或者代理工作的服务器尝试执行请求时，未能及时从上游服务器（URI标识出的服务器，例如HTTP、FTP、LDAP）或者辅助服务器（例如DNS）收到响应。</h3>
+                </div>
+                <p class="return-menu">
+                    <strong>你可以:&nbsp;&nbsp;&nbsp;</strong>
+                    <a href="/"><strong>返回首页</strong></a>
+                    <br>
+                    <strong>等待一会儿, 然后刷新</strong>
+                    <br>
+                    <strong>直接联系我们</strong>
+                </p>
+            </article>
+        </div>
+        <footer style="background-color: rgb(128, 128, 128); color: white; height: 14em; font-size: 1.2em; text-align: center; margin-top: auto;">
+            <p style="margin: 0.3rem;">
+                Copyright © 2017 - <span id="footyear"></span><br> TomsProject (BeiJing) Network Co.,Ltd. All Rights Reserved.<br>
+                <em>汤姆的项目网络科技有限公司 版权所有</em>
+            </p>
+            <p>本站由 Toms Project 开发制作</p>
+            <p><a target="_blank" href="https://beian.miit.gov.cn/" class="footer-a">京ICP备19007812号-2</a></p>
+            <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802032182" class="footer-a" style="display: inline-block;">
+                <img width="26px" src="https://assets.projectoms.com/image/Icon/big/police-64.png" style="float: left;">
+                <span style="margin: 0px 0px 0px 5px;">京公网安备 11010802032182号</span>
+            </a>
+            <br>
+            <a href="https://projectoms.com/page/terms.html" class="footer-a" style="margin-right: 1.7em;">服务条款</a>
+            <a href="https://status.projectoms.com/" class="footer-a">站点状态</a>
+            <a href="https://projectoms.com/page/privacy.html" class="footer-a" style="margin-left: 1.7em;">隐私政策</a>
+        </footer>
+        <script type="text/javascript">
+            // 2017-2025 TomsProject (BeiJing) Network Co.,Ltd. All Rights Reserved.
+            // Minisized for TP Error Page v5.0
+            function clock() {
+                var time = new Date();
+                var year = time.getFullYear();
+                document.getElementById("footyear").innerHTML = year;
+            }
+            clock();
+        </script>
+    </body>
+</html>
