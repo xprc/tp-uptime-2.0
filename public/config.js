@@ -15,7 +15,7 @@ window.Config = {
     'm788295575-83f4ce0c67de8beb34f97a35',  // dl.projectoms.com
     'm786806244-62a06340b5018360d5087335',  // s.tp.je
     'm791215570-9aca9f7901f8fd11fd6a0be3',  // a.ttdns.net
-    'm787703405-55e2fc68a732f011ffc471f8',  // c.ttdns.net
+    'm800617916-f66bcc915ee33e811604a7c1',  // c.ttdns.net
     'm787703473-a9fa1929268b3aa17a299511',  // i.ttdns.net
     'm786806242-378557f05cb42b9835625c0c',  // www.ckbctc.com
     'm785645634-ebdd2fac2256264ba66b52f0',  // test.projectoms.com
