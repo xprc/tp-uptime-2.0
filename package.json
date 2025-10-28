@@ -6,7 +6,7 @@
     "build": "react-scripts build"
   },
   "dependencies": {
-    "axios": "^1.12.2",
+    "axios": "^1.13.0",
     "dayjs": "^1.11.18",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
