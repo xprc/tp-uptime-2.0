@@ -12,10 +12,7 @@ export default defineConfig({
         'not op_mini all',
       ],
     }),
-    react({
-      babel: {
-        plugins: [['babel-plugin-react-compiler']],
-      },
-    }),
+    react(),
+    babel({ presets: [reactCompilerPreset()] })
   ],
 })
