@@ -1,7 +1,6 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from './link';
 import Header from './header';
-import useLocalStorage from 'use-local-storage';
 import { ToastContainer, toast } from 'react-toastify';
 import UptimeRobot from './uptimerobot';
 import Package from '../../package.json';
@@ -17,8 +16,18 @@ function App() {
   }, []);
   
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-  
+  const [theme, setTheme] = useState(() => {
+    if (typeof window === 'undefined') {
+      return defaultDark ? 'dark' : 'light';
+    }
+
+    return localStorage.getItem('theme') || (defaultDark ? 'dark' : 'light');
+  });
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
